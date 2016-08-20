@@ -96,16 +96,23 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <CompileAs>Default</CompileAs>
+      <AdditionalIncludeDirectories>external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>external\zlib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -145,17 +152,81 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ClientSock.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameClient.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="IncomingMessage.h" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="ParsedMap.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="Stat.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="XMLActivateEffect.h" />
+    <ClInclude Include="XMLConditionEffect.h" />
+    <ClInclude Include="XMLEnemy.h" />
+    <ClInclude Include="XMLItem.h" />
+    <ClInclude Include="ListenServer.h" />
+    <ClInclude Include="LogicLoop.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MessageDataReader.h">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
+    <ClInclude Include="MessageDataWriter.h" />
+    <ClInclude Include="MessageHandler.h" />
+    <ClInclude Include="MessageMap.h" />
+    <ClInclude Include="OutgoingMessage.h" />
+    <ClInclude Include="pugiconfig.hpp" />
+    <ClInclude Include="pugixml.hpp" />
+    <ClInclude Include="RealmManager.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="xml.h" />
+    <ClInclude Include="XMLProjectile.h" />
+    <ClInclude Include="XMLRoom.h" />
+    <ClInclude Include="XMLWorld.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RotMG Server.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    <ClCompile Include="ClientSock.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameClient.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="IncomingMessage.cpp" />
+    <ClCompile Include="ListenServer.cpp" />
+    <ClCompile Include="LogicLoop.cpp" />
+    <ClCompile Include="MessageDataReader.cpp" />
+    <ClCompile Include="MessageDataWriter.cpp" />
+    <ClCompile Include="MessageHandler.cpp">
+      <FileType>CppCode</FileType>
     </ClCompile>
+    <ClCompile Include="MessageMap.cpp" />
+    <ClCompile Include="OutgoingMessage.cpp" />
+    <ClCompile Include="ParsedMap.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="pugixml.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="RealmManager.cpp" />
+    <ClCompile Include="RotMG Server.cpp" />
+    <ClCompile Include="Stat.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="xml.cpp" />
+    <ClCompile Include="XMLActivateEffect.cpp" />
+    <ClCompile Include="XMLConditionEffect.cpp" />
+    <ClCompile Include="XMLEnemy.cpp" />
+    <ClCompile Include="XMLItem.cpp" />
+    <ClCompile Include="XMLProjectile.cpp" />
+    <ClCompile Include="XMLRoom.cpp" />
+    <ClCompile Include="XMLWorld.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="equip.xml">
+      <DeploymentContent>false</DeploymentContent>
+    </Xml>
+    <Xml Include="nexus.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nexus.jm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

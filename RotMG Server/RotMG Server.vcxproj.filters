@@ -11,26 +11,285 @@
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms;xml</Extensions>
+    </Filter>
+    <Filter Include="Header Files\net">
+      <UniqueIdentifier>{cbecea13-55f4-4097-92e4-c5231a0f0838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\messaging">
+      <UniqueIdentifier>{9e98fc1b-52ad-45ba-b8c1-c5cda364b1a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\messaging\outgoing">
+      <UniqueIdentifier>{51c5f684-2b9b-4807-9114-69bb0a2e60c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\messaging\incoming">
+      <UniqueIdentifier>{e17fbe1e-3f43-4a4f-897e-15d6c3480d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\io">
+      <UniqueIdentifier>{b0a8b99b-9b67-44c4-bb66-af632f67b977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rotmg">
+      <UniqueIdentifier>{45bd6faf-841d-4f2a-a175-f6efae9a1f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rotmg\realm">
+      <UniqueIdentifier>{e842f37d-ca4c-462e-8ea0-7885a5995789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rotmg\realm\worlds">
+      <UniqueIdentifier>{11df36d3-9d2c-4df7-a7c5-1057b53ffe2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io">
+      <UniqueIdentifier>{12a6a896-eea2-4288-878f-7fd5798b84c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net">
+      <UniqueIdentifier>{09af9660-b1ec-47fd-99b3-ceee8f7a5ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\messaging">
+      <UniqueIdentifier>{7df1c33e-3ff6-47df-b602-454679f931e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\messaging\incoming">
+      <UniqueIdentifier>{ef57c0b9-76b2-4f1f-91ed-fd3436bc7d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\messaging\outgoing">
+      <UniqueIdentifier>{5f9056f9-fc55-4d15-a24e-fdf1dd7c4c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rotmg">
+      <UniqueIdentifier>{5f80b9ed-7db7-4fe0-92c0-6ca4e6344d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rotmg\realm">
+      <UniqueIdentifier>{c9b19065-6abe-41ce-8d6c-023c0256a8e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rotmg\realm\worlds">
+      <UniqueIdentifier>{62fb686d-55a8-4e18-ba68-0de853115a72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io\xml">
+      <UniqueIdentifier>{598713c5-1ed2-49ab-b766-1fa392473345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\io\xml">
+      <UniqueIdentifier>{44b503ea-0ab4-498b-85e6-c23aab8d3d7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\descriptors">
+      <UniqueIdentifier>{a7a6719c-a034-4949-9f8a-f0ee15bbdce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\descriptors">
+      <UniqueIdentifier>{0edbce03-2687-4db0-a71e-2944552322ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rotmg\realm\objects">
+      <UniqueIdentifier>{05e2fbe4-2d82-433a-a42f-7c4d7dddcf97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rotmg\realm\objects">
+      <UniqueIdentifier>{2dca2282-c7f3-4a79-a271-7a0613b7dad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\messaging\data">
+      <UniqueIdentifier>{b77dfbc7-de77-4101-9b32-f980eb271e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\messaging\data">
+      <UniqueIdentifier>{2abbb14a-7cff-4c70-83ed-00b37934351f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{8c9b9b65-291f-4a1f-a532-f9424dadf9c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{0f2c7202-7eee-4209-979f-ed4b8d3d6671}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
+    <ClInclude Include="ListenServer.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="OutgoingMessage.h">
+      <Filter>Header Files\net\messaging\outgoing</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageMap.h">
+      <Filter>Header Files\net\messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDataReader.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDataWriter.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="IncomingMessage.h">
+      <Filter>Header Files\net\messaging\incoming</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>Header Files\net\messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Header Files\rotmg\realm\worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSock.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
+    <ClInclude Include="MessageHandler.h">
+      <Filter>Header Files\net\messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicLoop.h">
+      <Filter>Header Files\rotmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RealmManager.h">
+      <Filter>Header Files\rotmg</Filter>
+    </ClInclude>
+    <ClInclude Include="pugiconfig.hpp">
+      <Filter>Header Files\io\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml.hpp">
+      <Filter>Header Files\io\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml.h">
+      <Filter>Header Files\io\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLItem.h">
+      <Filter>Header Files\descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLProjectile.h">
+      <Filter>Header Files\descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLActivateEffect.h">
+      <Filter>Header Files\descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLConditionEffect.h">
+      <Filter>Header Files\descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLEnemy.h">
+      <Filter>Header Files\descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="ParsedMap.h">
+      <Filter>Header Files\rotmg\realm\worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\rotmg\realm\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Stat.h">
+      <Filter>Header Files\net\messaging\data</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\rotmg\realm\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLWorld.h">
+      <Filter>Header Files\descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLRoom.h">
+      <Filter>Header Files\descriptors</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="RotMG Server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageDataWriter.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageDataReader.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSock.cpp">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="ListenServer.cpp">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="IncomingMessage.cpp">
+      <Filter>Source Files\net\messaging\incoming</Filter>
+    </ClCompile>
+    <ClCompile Include="OutgoingMessage.cpp">
+      <Filter>Source Files\net\messaging\outgoing</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageHandler.cpp">
+      <Filter>Source Files\net\messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageMap.cpp">
+      <Filter>Source Files\net\messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicLoop.cpp">
+      <Filter>Source Files\rotmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RealmManager.cpp">
+      <Filter>Source Files\rotmg</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files\rotmg\realm\worlds</Filter>
+    </ClCompile>
+    <ClCompile Include="xml.cpp">
+      <Filter>Source Files\io\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLItem.cpp">
+      <Filter>Source Files\descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLProjectile.cpp">
+      <Filter>Source Files\descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLActivateEffect.cpp">
+      <Filter>Source Files\descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLConditionEffect.cpp">
+      <Filter>Source Files\descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml.cpp">
+      <Filter>Source Files\io\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLEnemy.cpp">
+      <Filter>Source Files\descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="ParsedMap.cpp">
+      <Filter>Source Files\rotmg\realm\worlds</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\rotmg\realm\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Stat.cpp">
+      <Filter>Source Files\net\messaging\data</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLRoom.cpp">
+      <Filter>Source Files\descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLWorld.cpp">
+      <Filter>Source Files\descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\rotmg\realm\objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="equip.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="nexus.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nexus.jm">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

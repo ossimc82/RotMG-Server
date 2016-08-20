@@ -1,11 +1,19 @@
 // RotMG Server.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+#include "ListenServer.h"
+#include "RealmManager.h"
+#include "GameObject.h"
+#include <iostream>
 
+int main() {
+	RealmManager manager;
+	manager.start();
 
-int main()
-{
-    return 0;
+	ListenServer server;
+	server.start();
+
+	while (true);
+	
+	return 0;
 }
-

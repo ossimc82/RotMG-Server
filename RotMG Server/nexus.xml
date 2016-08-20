@@ -1,0 +1,110 @@
+<Dungeons>
+    <Dungeon id="Test">
+        <Width>256</Width>
+        <Height>256</Height>
+        <Background>2</Background>
+        <Visibility>Full</Visibility>
+        <ShowDisplays/>
+        <TestMap/>
+    </Dungeon>
+	<Dungeon id="Nexus">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Background>2</Background>
+		<DefaultTile>Space</DefaultTile>
+		<CenterStartRoom/>
+		<Visibility>Full</Visibility>
+		<ShowDisplays/>
+
+		<GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 2</GlobalReplaceTile>
+		<GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 3</GlobalReplaceTile>
+		<GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 4</GlobalReplaceTile>
+		<GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 5</GlobalReplaceTile>
+
+		<Room id="start">
+			<LocalJM>nexus.jm</LocalJM>
+		</Room>
+	</Dungeon>
+	<Dungeon id="Vault">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Background>2</Background>
+		<DefaultTile>Space</DefaultTile>
+		<CenterStartRoom/>
+		<Visibility>Full</Visibility>
+		<ShowDisplays/>
+
+		<GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 2</GlobalReplaceTile>
+		<GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 3</GlobalReplaceTile>
+		<GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 4</GlobalReplaceTile>
+		<GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 5</GlobalReplaceTile>
+
+		<Room id="start">
+			<LocalJM>vault.jm</LocalJM>
+		</Room>
+	</Dungeon>
+	<Dungeon id="Guild Hall">
+        <DisplayName>Guild Hall</DisplayName>
+		<Width>128</Width>
+		<Height>128</Height>
+		<CenterStartRoom/>
+		<Visibility>Full</Visibility>
+		<ShowDisplays/>
+
+		<Room id="start">
+			<LocalJM>guild_hall/1.jm</LocalJM>
+		</Room>
+	</Dungeon>
+    <Dungeon id="Guild Hall 2">
+        <DisplayName>Guild Hall</DisplayName>
+		<Width>128</Width>
+		<Height>128</Height>
+		<CenterStartRoom/>
+		<Visibility>Full</Visibility>
+		<ShowDisplays/>
+
+		<Room id="start">
+			<LocalJM>guild_hall/2.jm</LocalJM>
+		</Room>
+	</Dungeon>
+	<Dungeon id="Guild Hall 3">
+        <DisplayName>Guild Hall</DisplayName>
+		<Width>128</Width>
+		<Height>128</Height>
+		<CenterStartRoom/>
+		<Visibility>Full</Visibility>
+		<ShowDisplays/>
+
+		<Room id="start">
+			<LocalJM>guild_hall/3.jm</LocalJM>
+		</Room>
+	</Dungeon>
+	<Dungeon id="Guild Hall 4">
+        <DisplayName>Guild Hall</DisplayName>
+		<Width>128</Width>
+		<Height>128</Height>
+		<CenterStartRoom/>
+		<Visibility>Full</Visibility>
+		<ShowDisplays/>
+
+		<Room id="start">
+			<LocalJM>guild_hall/4.jm</LocalJM>
+		</Room>
+	</Dungeon>
+  <Dungeon id="Cloth Bazaar">
+      <Width>128</Width>
+      <Height>128</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 2</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 3</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 4</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 5</GlobalReplaceTile>
+
+      <Room id="start">
+          <LocalJM>cloth_bazaar.jm</LocalJM>
+      </Room>
+  </Dungeon>
+</Dungeons>
